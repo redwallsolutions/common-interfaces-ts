@@ -1,3 +1,8 @@
-import commoninterfacests from './components'
+import {
+	IAppearance,
+	ICommonProps,
+	ITheme,
+	IThemeMode
+} from './components/interfaces'
 
-export default commoninterfacests
+export { IAppearance, ICommonProps, ITheme, IThemeMode }
