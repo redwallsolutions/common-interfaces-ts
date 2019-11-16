@@ -8,12 +8,11 @@
   ],
   "scripts": {
     "start": "rimraf demo/output && parcel demo/index.html -d demo/output",
-    "build": "rimraf dist && tsc",
-    "release": "yarn build && npm publish"
+    "test": "jest",
+    "build": "yarn test && rimraf dist && tsc"
   },
-  "types": "dist/index.d.ts",
   "repository": "https://github.com/redwallsolutions/common-interfaces-ts.git",
-  "author": "ribeiro",
+  "author": "Andrew Ribeiro",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -24,6 +23,9 @@
     "react": ">= 16.3.0",
     "react-dom": ">= 16.3.0",
     "rimraf": "^3.0.0",
-    "typescript": "^3.6.4"
+    "typescript": "^3.6.4",
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0"
   }
 }
